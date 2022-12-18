@@ -1,0 +1,228 @@
+html, body {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow-x:hidden;
+}
+
+/*navbar design*/
+.navbar .navbar-nav .nav-item:hover{
+    background-color: yellow;
+    border-radius: 40%;
+}
+.image-text .bannerwelcometext{
+  color: black;
+}
+.navbar{
+    font-weight: 700;
+}
+
+/* banner design */
+.background-image{
+  background-image: linear-gradient(rgba(20, 19, 19, 0.5), rgba(24, 22, 22, 0.5)),
+  url("networking_banner.png");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+}
+
+.background-image .image-text{
+  color: white;
+  margin: auto 0 auto 50px;
+}
+
+.bannersd span {
+  color: orange;
+}
+
+.image-text button{
+  padding: 10px 25px;
+  color: #fff;
+  background-color:  rgb(92, 120, 182);
+  font-weight: 500;
+}
+
+.image-text button:hover{
+    background-color: orange;
+}
+
+/*section styling*/
+.topics{
+    min-height: 55vh;
+}
+
+.topics .sectioncontainer .sectiontitle{
+  position: relative;
+  padding-bottom: 21px;
+  margin-bottom: 55px;
+}
+
+/* Timeline */
+.topics .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.topics .timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: red;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.topics .c{
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.topics .c::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid blue;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 25px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgb(0, 0, 0);
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 25px;
+  border: medium solid rgb(8, 8, 8);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgb(8, 8, 8) transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+.left{
+  left: -25.5%;
+}
+.right{
+  right: -25.2%;
+}
+
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .topics .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .topics .c {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .topics .c::before {
+  left: 50px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgb(14, 13, 13) transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .right::after {
+  left: 15px;
+  }
+
+  .left::after{
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  right: -1%;
+  }
+  .left{
+    left: 5px;
+  }
+
+  .s .skill-row .skill .container-fluid{
+    width: auto;  
+    padding-left: auto;
+    padding-right: auto;
+  }
+}
+
+/* The actual content */
+.topics .content {
+  padding: 20px 20px;
+  background-color: lightslategray;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Skill section */
+.skill-row .skill .skillcard{
+  align-items: center;
+  padding: 2px 2px 2px 2px;
+}
+
+.skill-row .skill .skillcard:hover{
+  background-color: #fff;
+}
+
+.skill-row .skill .skillcard{
+  background-color: lightblue;
+  margin: 8%;
+}
+
+.skill-row .skill .icon{
+  height: 50px;
+  width: 50px;
+  font-size: 2rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px blue;
+  margin: 5px;
+}
+
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: silver;
+}
+
+::-webkit-scrollbar-thumb {
+  background: blue;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: blue;
+}
+
